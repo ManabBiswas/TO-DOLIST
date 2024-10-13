@@ -49,14 +49,41 @@ main {
 .container h2 {
     text-align: center;
     color: #1e88e5;
-    text-shadow: 1px 1px 1px #1e1e1e89;
+    text-shadow: 1px 1px 1px #a5a5a5;
 
 }
+
 .container hr {
     margin: 15px 0;
     color: #1e88e5;
     border: 1px solid;
 }
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#addButton {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 35%;
+    border: none;
+    border-radius: 15px;
+    color: #1c7af4;
+    text-transform: capitalize;
+    font-style: oblique;
+    text-shadow: 1px 1px .5px #a5a5a5;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 750;
+    box-shadow: 1px 0px 2px #1761c2;
+    background-color: transparent;
+
+}
+
 .todo {
     margin: 10px 0;
     padding: 15px;
@@ -66,6 +93,11 @@ main {
     /* background-color: #f9f9f9; */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.todoLabel {
+    color: #1761c2;
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .todoValue {
@@ -84,20 +116,27 @@ main {
 
 .todo:has(.todoCheckbox:checked) {
     color: #898888;
-    background-color: gainsboro;;
+    background-color: gainsboro;
+    ;
     text-decoration: line-through;
-    order: 2; 
+    order: 2;
 }
+
 .todo:hover {
     background-color: ghostwhite;
-    border-bottom:2px solid #1e88e5;
-    border-right:2px solid #1e88e5;
+    border-bottom: 2px solid #1e88e5;
+    border-right: 2px solid #1e88e5;
     transform: scaleX(1.025);
 
 }
 
 .todoCheckbox {
-    margin-left: 10px;
+    /* margin-left: 10px; */
+    height: 20px;
+    width: 20px;
+
+
+
 }
 
 footer {
@@ -159,6 +198,7 @@ footer {
         margin-bottom: 10px;
     }
 }
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 3rem;

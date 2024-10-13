@@ -49,7 +49,7 @@ main {
 .container h2 {
     text-align: center;
     color: #1e88e5;
-    text-shadow: 1px 1px 1px #a5a5a5;
+    text-shadow: 1px 1px 1px #c7c7c7;
 
 }
 
@@ -75,7 +75,7 @@ main {
     color: #1c7af4;
     text-transform: capitalize;
     font-style: oblique;
-    text-shadow: 1px 1px .5px #a5a5a5;
+    text-shadow: 1px 1px .5px #c7c7c7;
     text-align: center;
     font-size: 18px;
     font-weight: 750;
@@ -101,6 +101,7 @@ main {
 }
 
 .todoValue {
+    margin: 5px;
     padding: 10px;
     border: none;
     border-radius: 7px;

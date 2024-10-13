@@ -1,17 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
-    <meta name="description"
-        content="A beautifully designed and functional to-do list application to help you organize and manage your tasks effectively.">
+    <meta name="description" content="A beautifully designed and functional to-do list application to help you organize and manage your tasks effectively.">
     <meta name="keywords" content="To-do list, task manager, productivity, organize, manage tasks">
     <meta name="author" content="Manab Biswas">
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <header>
         <h1>Welcome</h1>
@@ -20,35 +17,16 @@
         <div class="container">
             <h2>Make your Todo list</h2>
             <hr>
+            <div class="add"><button type="button" id="addButton">Add new task</button></div>
             <div class="todo">
                 <label for="todo1" class="todoLabel">Todo 1:</label>
                 <input type="text" id="todo1" class="todoValue" placeholder="Write what to do.....">
                 <input type="checkbox" id="check1" name="checkbox" class="todoCheckbox">
             </div>
-            <div class="todo">
-                <label for="todo2" class="todoLabel">Todo 2:</label>
-                <input type="text" id="todo2" class="todoValue" placeholder="Write what to do.....">
-                <input type="checkbox" id="check2" name="checkbox" class="todoCheckbox">
-            </div>
-            <div class="todo">
-                <label for="todo3" class="todoLabel">Todo 3:</label>
-                <input type="text" id="todo3" class="todoValue" placeholder="Write what to do.....">
-                <input type="checkbox" id="check3" name="checkbox" class="todoCheckbox">
-            </div>
-            <div class="todo">
-                <label for="todo4" class="todoLabel">Todo 4:</label>
-                <input type="text" id="todo4" class="todoValue" placeholder="Write what to do.....">
-                <input type="checkbox" id="check4" name="checkbox" class="todoCheckbox">
-            </div>
-            <div class="todo">
-                <label for="todo5" class="todoLabel">Todo 5:</label>
-                <input type="text" id="todo5" class="todoValue" placeholder="Write what to do.....">
-                <input type="checkbox" id="check5" name="checkbox" class="todoCheckbox">
-            </div>
+            
         </div>
     </main>
     <footer>
-
         <div class="footer-container">
             <p>&copy; <span id="current-year"></span> Manab Biswas. All rights reserved.</p>
             <hr style="border: 1px solid gold;width: 95%;margin-top: 5px;margin-bottom: ;">
@@ -59,9 +37,7 @@
                 <a href="https://github.com/ManabBiswas" target="_blank">GitHub</a>
             </div>
         </div>
-
     </footer>
     <script src="script.js"></script>
 </body>
-
 </html>

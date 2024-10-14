@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
@@ -11,8 +10,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+    position: relative;
+    background-image: url(vector-programming-pattern-coding-seamless-background-253210371.jpg);
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
 
+}
+header {
+    margin: 1px;
+    background-color: #1e88e5;
+    border-radius: 25px 25px 0 0;
+    width: 100%;
+}
 header h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -24,7 +35,6 @@ header h1 {
     text-shadow: 0px 0px 5px #000000;
     padding: 5px;
 }
-
 main {
     display: flex;
     justify-content: center;
@@ -33,9 +43,6 @@ main {
     max-width: 600px;
     padding: 20px;
 }
-
-
-
 .container {
     display: flex;
     flex-direction: column;
@@ -44,28 +51,25 @@ main {
     border-radius: 20px;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    opacity: 0.95;
 }
-
 .container h2 {
     text-align: center;
     color: #1e88e5;
     text-shadow: 1px 1px 1px #c7c7c7;
-
 }
-
 .container hr {
     margin: 15px 0;
     color: #1e88e5;
     border: 1px solid;
 }
-
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    
 }
-
 #addButton {
     margin-bottom: 10px;
     padding: 10px;
@@ -80,17 +84,15 @@ main {
     font-size: 18px;
     font-weight: 750;
     box-shadow: 1px 0px 2px #1761c2;
-    background-color: transparent;
-
+    background-color: #fff;
+    opacity: 5;
 }
-
 .todo {
     margin: 10px 0;
     padding: 15px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* background-color: #f9f9f9; */
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -99,7 +101,6 @@ main {
     text-decoration: underline;
     font-weight: bold;
 }
-
 .todoValue {
     margin: 5px;
     padding: 10px;
@@ -109,62 +110,49 @@ main {
     font-size: 1em;
     font-weight: bolder;
     flex-grow: 2;
-    background: transparent;
+    background-color: #ffffff;
     color: #060606;
     overflow: auto;
+    opacity: .99;
 }
-
-
 .todo:has(.todoCheckbox:checked) {
     color: #898888;
     background-color: gainsboro;
-    ;
     text-decoration: line-through;
     order: 2;
 }
-
 .todo:hover {
     background-color: ghostwhite;
     border-bottom: 2px solid #1e88e5;
     border-right: 2px solid #1e88e5;
     transform: scaleX(1.025);
-
 }
-
 .todoCheckbox {
-    /* margin-left: 10px; */
     height: 20px;
     width: 20px;
-
-
-
 }
-
 footer {
-    margin: 5px;
+    margin-top: auto;
+    margin-bottom: .5rem;
     background-color: #000000;
     color: white;
     padding: 10px 0;
     text-align: center;
-    width: 100%;
+    width: 99%;
     border-radius: 0 0 25px 25px;
 }
-
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 0 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 .footer-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-
 .footer-links a {
     font-size: 16px;
     color: #fdfdfd;
@@ -173,7 +161,6 @@ footer {
     padding: 10px;
     transition: color 0.3s ease, font-size 0.5s ease;
 }
-
 .footer-links a:hover {
     color: #1c7af4;
     font-size: 105%;
@@ -185,37 +172,45 @@ footer {
         font-size: 4rem;
         padding: 10px;
     }
-
     .container {
         padding: 15px;
     }
-
     .todo {
         flex-direction: column;
         align-items: flex-start;
     }
-
     .todoValue {
         margin-bottom: 10px;
     }
+    #addButton {
+        width: 50%;
+        padding: 8px;
+        font-size: 16px;
+    }
+    footer {
+        padding: 8px 0;
+    }
 }
-
 @media (max-width: 480px) {
     header h1 {
         font-size: 3rem;
         padding: 10px;
     }
-
     .container {
         padding: 10px;
         border-radius: 10px;
     }
-
     .todo {
         padding: 10px;
     }
-
     .todoValue {
         font-size: 0.9em;
+    }
+    #addButton {
+        min-width: 75%;
+        padding: 5px;
+    }
+    footer {
+        padding: 6px 0;
     }
 }

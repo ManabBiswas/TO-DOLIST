@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
@@ -13,15 +12,15 @@ body {
     align-items: center;
     position: relative;
     background-image: url(vector-programming-pattern-coding-seamless-background-253210371.jpg);
-    background-repeat: repeat-x;
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
     z-index: -1;
 }
 header {
-    margin: 1px;
+    margin: 0.5x;
     background-color: #1e88e5;
-    border-radius: 25px 25px 0 0;
+    border-radius: 20px 20px 0 0;
     width: 100%;
 }
 header h1 {
@@ -44,7 +43,8 @@ main {
     padding: 20px;
 }
 .container {
-    display: flex;
+    display: grid;
+    gap: 1em;
     flex-direction: column;
     padding: 20px;
     border: 1px solid #1e88e5;
@@ -54,11 +54,32 @@ main {
     background-color: #fff;
     opacity: 0.95;
 }
-.container h2 {
-    text-align: center;
+.container .banner {
+    display: flex;
+    gap: 1em;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner h2 {
+    text-align:center;
     color: #1e88e5;
     text-shadow: 1px 1px 1px #c7c7c7;
 }
+.count {
+    background-color: #4babfe;
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-size: 1.7em;
+    font-weight: 750;
+    text-shadow: inset 1px 1px 1px #c7c7c7;
+    filter: drop-shadow(0px 0px 1px rgb(102, 102, 156));
+}
+
 .container hr {
     margin: 15px 0;
     color: #1e88e5;
@@ -134,7 +155,7 @@ main {
     margin-right: 5px;
 }
 .deleteButton {
-    margin-left: 10px;
+    margin-left: 2.1%;
     padding: 5px 10px;
     border: none;
     border-radius: 25px;
@@ -149,13 +170,13 @@ main {
 }
 footer {
     margin-top: auto;
-    margin-bottom: .5rem;
+    margin-bottom:0.5px;
     background-color: #000000;
     color: white;
     padding: 10px 0;
     text-align: center;
-    width: 99%;
-    border-radius: 0 0 25px 25px;
+    width: 99.5%;
+    border-radius: 0 0 17px 17px;
 }
 .footer-container {
     max-width: 1000px;

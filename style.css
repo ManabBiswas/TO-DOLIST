@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
@@ -17,12 +18,14 @@ body {
     background-size: cover;
     z-index: -1;
 }
+
 header {
     margin: 0.5x;
     background-color: #1e88e5;
     border-radius: 20px 20px 0 0;
     width: 100%;
 }
+
 header h1 {
     text-align: center;
     margin-bottom: 30px;
@@ -34,6 +37,7 @@ header h1 {
     text-shadow: 0px 0px 5px #000000;
     padding: 5px;
 }
+
 main {
     display: flex;
     justify-content: center;
@@ -42,8 +46,9 @@ main {
     max-width: 600px;
     padding: 20px;
 }
+
 .container {
-    display: grid;
+    display: flex;
     gap: 1em;
     flex-direction: column;
     padding: 20px;
@@ -54,17 +59,20 @@ main {
     background-color: #fff;
     opacity: 0.95;
 }
+
 .container .banner {
     display: flex;
     gap: 1em;
     justify-content: space-between;
     align-items: center;
 }
+
 .banner h2 {
-    text-align:center;
+    text-align: center;
     color: #1e88e5;
     text-shadow: 1px 1px 1px #c7c7c7;
 }
+
 .count {
     background-color: #4babfe;
     border-radius: 50%;
@@ -80,16 +88,34 @@ main {
     filter: drop-shadow(0px 0px 1px rgb(102, 102, 156));
 }
 
+.totalbar {
+    width: 85%;
+    height: 10px;
+    border: 1px solid #4babfe;
+    border-radius: 5px;
+}
+
+.progressbar {
+    width: 50%;
+    height: 10px;
+    background: linear-gradient(to top right, #1c7af4,#b5dcfd);
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out ;
+
+}
+
 .container hr {
     margin: 15px 0;
     color: #1e88e5;
     border: 1px solid;
 }
+
 .add {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 #addButton {
     margin-bottom: 10px;
     padding: 10px;
@@ -107,6 +133,7 @@ main {
     background-color: #fff;
     opacity: 5;
 }
+
 .todo {
     margin: 10px 0;
     padding: 15px;
@@ -117,11 +144,13 @@ main {
     position: relative;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .todoLabel {
     color: #1761c2;
     text-decoration: underline;
     font-weight: bold;
 }
+
 .todoValue {
     margin: 5px;
     padding: 10px;
@@ -137,40 +166,46 @@ main {
     overflow: auto;
     opacity: .9;
 }
+
 .todo:has(.todoCheckbox:checked) {
     color: #898888;
     background-color: gainsboro;
     text-decoration: line-through;
     order: 2;
 }
+
 .todo:hover {
     background-color: ghostwhite;
     border-bottom: 2px solid #1e88e5;
     border-right: 2px solid #1e88e5;
     transform: scaleX(1.025);
 }
+
 .todoCheckbox {
     height: 20px;
     width: 20px;
     margin-right: 5px;
 }
+
 .deleteButton {
-    margin-left: 2.1%;
+    position: absolute;
     padding: 5px 10px;
     border: none;
     border-radius: 25px;
-    background-color: #ff6347;
+    background: linear-gradient(to top right, #ff6347,#f9b5a9);
     color: #fff;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+
 .deleteButton:hover {
     background-color: #ff4500;
     transform: scaleX(1.025);
 }
+
 footer {
     margin-top: auto;
-    margin-bottom:0.5px;
+    margin-bottom: 0.5px;
     background-color: #000000;
     color: white;
     padding: 10px 0;
@@ -178,6 +213,7 @@ footer {
     width: 99.5%;
     border-radius: 0 0 17px 17px;
 }
+
 .footer-container {
     max-width: 1000px;
     margin: 0 auto;
@@ -185,11 +221,13 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
 .footer-links {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
+
 .footer-links a {
     font-size: 16px;
     color: #fdfdfd;
@@ -198,54 +236,67 @@ footer {
     padding: 10px;
     transition: color 0.3s ease, font-size 0.5s ease;
 }
+
 .footer-links a:hover {
     color: #1c7af4;
     font-size: 105%;
     border-bottom: 2px solid #1c7af4;
 }
+
 @media (max-width: 768px) {
     header h1 {
         font-size: 4rem;
         padding: 10px;
     }
+
     .container {
         padding: 15px;
     }
+
     .todo {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .todoValue {
         margin-bottom: 10px;
     }
+
     #addButton {
         width: 50%;
         padding: 8px;
         font-size: 16px;
     }
+
     footer {
         padding: 8px 0;
     }
 }
+
 @media (max-width: 480px) {
     header h1 {
         font-size: 3rem;
         padding: 10px;
     }
+
     .container {
         padding: 10px;
         border-radius: 10px;
     }
+
     .todo {
         padding: 10px;
     }
+
     .todoValue {
         font-size: 0.9em;
     }
+
     #addButton {
         min-width: 75%;
         padding: 5px;
     }
+
     footer {
         padding: 6px 0;
     }

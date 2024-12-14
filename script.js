@@ -7,14 +7,22 @@ document.addEventListener("DOMContentLoaded", function () {
   container.addEventListener("click", function (e) {
     if (e.target && e.target.className === "deleteButton") {
       e.target.parentElement.remove();
+      update();
     }
   });
+
+function update() {
+  const taskNumber = document.querySelectorAll(".todo").length +1;
+  const lowercount = document.getElementById('lowercount');
+  lowercount.textContent = taskNumber;
+}
 
   function addTask() {
     const taskNumber = document.querySelectorAll(".todo").length + 1;
     const newTask = document.createElement("div");
     newTask.className = "todo";
 
+    update();
     const newCheckbox = document.createElement("input");
     newCheckbox.type = "checkbox";
     newCheckbox.id = `check${taskNumber}`;
@@ -36,6 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
     deleteButton.type = "button";
     deleteButton.className = "deleteButton";
     deleteButton.textContent = "✖";
+    
 
     newTask.appendChild(newCheckbox);
     newTask.appendChild(newLabel);

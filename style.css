@@ -13,9 +13,8 @@ body {
     align-items: center;
     position: relative;
     background-image: url(vector-programming-pattern-coding-seamless-background-253210371.jpg);
-    background-repeat: repeat-y;
-    background-position: center;
-    background-size: cover;
+    background-position: top left repeat;
+    background-size: contain;
     z-index: -1;
 }
 
@@ -96,11 +95,12 @@ main {
 }
 
 .progressbar {
-    width: 50%;
+    width: 0%;
+    /* depends on how many task completed */
     height: 10px;
-    background: linear-gradient(to top right, #1c7af4,#b5dcfd);
+    background: linear-gradient(to top right, #1c7af4, #b5dcfd);
     border-radius: 5px;
-    transition: all 0.3s ease-in-out ;
+    transition: all 0.3s ease-in-out;
 
 }
 
@@ -189,7 +189,7 @@ main {
     height: 20px;
     width: 20px;
     margin-right: 5px;
-}      
+}
 
 .deleteButton {
     position: absolute;
@@ -199,7 +199,7 @@ main {
     padding: 5px 10px;
     border: none;
     border-radius: 25px;
-    background: linear-gradient(to top right, #ff6347,#f9b5a9);
+    background: linear-gradient(to top right, #ff6347, #f9b5a9);
     color: #fff;
     cursor: pointer;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

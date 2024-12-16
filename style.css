@@ -13,15 +13,16 @@ body {
     align-items: center;
     position: relative;
     background-image: url(vector-programming-pattern-coding-seamless-background-253210371.jpg);
+    filter: saturate(2);
     background-position: top left repeat;
     background-size: contain;
     z-index: -1;
 }
 
 header {
-    margin: 0.5x;
-    background-color: #1e88e5;
+    background: linear-gradient(to top right, #1c7af4, #b5dcfd);
     border-radius: 20px 20px 0 0;
+    border-bottom: 0.5px solid white;
     width: 100%;
 }
 
@@ -73,20 +74,22 @@ main {
 }
 
 .count {
-    background-color: #4babfe;
+    background: linear-gradient(to top right, #1c7af4, #b5dcfd);
     border-radius: 50%;
-    height: 75px;
-    width: 75px;
+    height: 90px;
+    width: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     font-size: 1.7em;
-    font-weight: 750;
-    text-shadow: inset 1px 1px 1px #c7c7c7;
     filter: drop-shadow(0px 0px 1px rgb(102, 102, 156));
 }
+.count span h2 {
+    text-shadow: inset 1px 1px 1px #c7c7c7;
+    color: white;
 
+}
 .totalbar {
     width: 85%;
     height: 10px;
@@ -132,6 +135,7 @@ main {
     box-shadow: 1px 0px 2px #1761c2;
     background-color: #fff;
     opacity: 5;
+    cursor: pointer;
 }
 
 .todo {
@@ -189,6 +193,7 @@ main {
     height: 20px;
     width: 20px;
     margin-right: 5px;
+    cursor: pointer;
 }
 
 .deleteButton {
@@ -228,7 +233,9 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
+#rights{
+    font-style: italic;
+}
 .footer-links {
     display: flex;
     justify-content: center;
